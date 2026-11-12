@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWR</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/WWR.css">
+    <script src="/js/theme.js" defer></script>
+    <script src="/js/seasonal-logo.js" defer></script>
+    <script src="/js/wwr-random.js" defer></script>
+    <script>
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="/">
+            <img class="brand-logo" src="/images/Logo/logo.png" alt="Parley Murdock logo">
+            <span class="brand-name">Parl</span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+            <a href="/">Home</a>
+            <a href="/WWR/" aria-current="page">WWR</a>
+            <a href="/ICE/">ICE</a>
+            <a href="/About_Me/">About Me</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                <path d="M12 2a10 10 0 0 0 0 20z" fill="var(--bg)"></path>
+            </svg>
+        </button>
+    </header>
+
+    <h1>WWR</h1>
+    <p class="small">
+        What does WWR stand for?
+    </p>
+    <p class="small" id="wwr-expansion"></p>
+    <a class="image" href="/WWR/site/"><img src="/images/Sites/WWR.png" alt=""></a>
+    <footer class="site-footer">
+        <a class="footer-brand" href="/">Parl</a>
+        <a href="/About_Me/">About me</a>
+        <a href="/Licences/">Licences</a>
+        <a href="https://parl.tv">My Website</a>
+        <a href="/Privacy_Policy/">Privacy Policy</a>
+    </footer>
+</body>
+</html>

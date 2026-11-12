@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eeeae2; color: white; font-family: Arial, Helvetica, sans-serif; }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; min-height: 100vh; padding: 5vh 4vw; }
+.poster { position: relative; display: grid; min-height: 90vh; overflow: hidden; isolation: isolate; background: #27333a; }
+.poster-photo { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.chile-photo { background-image: linear-gradient(155deg, rgba(20,45,53,.18), rgba(20,45,53,.38)), url("https://images.unsplash.com/photo-1668052785861-a1e5bf4fcf3d?auto=format&fit=crop&w=1400&q=82"); background-color: #455d61; }
+.denmark-photo { background-image: linear-gradient(170deg, rgba(20,45,53,.08), rgba(20,45,53,.35)), url("https://images.unsplash.com/photo-1572438749634-04bb6b700376?auto=format&fit=crop&w=1400&q=82"); background-color: #40545b; }
+.finland-photo { background-image: linear-gradient(155deg, rgba(20,45,53,.08), rgba(20,45,53,.35)), url("https://images.unsplash.com/photo-1564857170582-80855988d55e?auto=format&fit=crop&w=1400&q=82"); background-color: #52716b; }
+.car-photo { background-image: linear-gradient(155deg, rgba(16,35,58,.18), rgba(16,35,58,.38)), url("https://unsplash.com/photos/m-b81gOjxv4/download?auto=format&fit=crop&w=1400&q=82"); background-color: #405d65; }.poster-photo::after { content: ""; position: absolute; inset: 0; opacity: .55; background: repeating-linear-gradient(125deg, transparent 0 40px, rgba(255,255,255,.12) 41px 44px, transparent 45px 90px); }
+.flag { position: absolute; z-index: 1; top: 8%; left: 50%; width: 100%; aspect-ratio: 3 / 2; transform: translateX(-50%) rotate(-5deg) scale(1.15); opacity: .62; filter: saturate(1.15); }
+.poster-overlay { position: absolute; z-index: 2; inset: 0; background: linear-gradient(transparent 35%, rgba(4,12,16,.9) 100%); }
+.poster-text { position: relative; z-index: 3; align-self: end; padding: 2rem; }
+.poster-text p, .poster-text small { margin: 0; text-transform: uppercase; letter-spacing: .2em; font-size: .72rem; }
+.poster-text h1 { margin: .5rem 0 .35rem; font-size: clamp(2rem, 4vw, 4.2rem); letter-spacing: .07em; }
+/* Students: add your flag elements and flag-specific grid rules below. */
+
+@media (max-width: 1100px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 650px) { .gallery { grid-template-columns: 1fr; } .poster { min-height: 70vh; } }
+
+.flag {
+display: grid;
+/* aspect-ratio: 2 / 3; */
+}
+
+.flag_den {
+    display: grid;
+
+    grid-template-columns: 100px 40px 200px;
+    grid-template-rows: 100px 40px 100px;
+    .red {
+        background-color: red;
+        color: red;
+    }
+    .white {
+        background-color: white;
+        color: white;
+    }
+}
+
+.flag_fin{
+    display: grid;
+
+    grid-template-columns: 100px 40px 200px;
+    grid-template-rows: 100px 40px 100px;
+    .red {
+        background-color: white;
+        color: white;
+    }
+    .white {
+        background-color: blue;
+        color: blue;
+    }
+}
+
+.flag_chi {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 120px 120px;
+    .blue {
+        background-color: blue;
+        font-size: 100px;
+    }
+    .white {
+        background-color: white;
+    }
+    .red {
+        background-color: red;
+    }
+}
+
+.flag_car {
+    display: grid;
+    grid-template-columns: 125px 50px 125px;
+    grid-template-rows: 60px 60px 60px 60px;
+    .blue {
+        background-color: darkblue;
+        font-size: 50px;
+        color: yellow;
+        .star{
+            position: relative;
+            left: 10px
+        }
+    }
+    .white {
+        background-color: white;
+    }
+    .green {
+        background-color: green;
+    }
+    .yellow {
+        background-color: #ffff00;
+    }
+    .red {
+        background-color: darkred;
+    }
+}

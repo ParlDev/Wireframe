@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parl</title>
+  <link rel="preload" href="fonts/PressStart2P-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="/js/theme.js" defer></script>
+  <script src="/js/carousel.js" defer></script>
+  <script src="/js/seasonal-logo.js" defer></script>
+  <script>
+    const t = localStorage.getItem("theme");
+    if (t) document.documentElement.dataset.theme = t;
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="images/Logo/logo.png" alt="Parley Murdock logo">
+      <span class="brand-name">Parl</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="/" aria-current="page">Home</a>
+      <a href="WWR/">WWR</a>
+      <a href="ICE/">ICE</a>
+      <a href="About_Me/">About Me</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+        <path d="M12 2a10 10 0 0 0 0 20z" fill="var(--bg)"></path>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="carousel" aria-roledescription="carousel" aria-label="Featured images">
+      <div class="carousel-viewport">
+        <ul class="carousel-track" id="carousel-track">
+          <li class="slide"><a href="/ICE/Prophet_Card/"><img src="/images/Sites/Dallin_H_Oaks.png" alt="Prophet Card"></a></li>
+          <li class="slide"><a href="/ICE/Apostle_Spotlight/"><img src="/images/Sites/Apostles.png" alt="Apostle Spotlight"></a></li>
+          <li class="slide"><a href="/ICE/My_Fav_Devos/"><img src="/images/Sites/My_Fav_Devos.png" alt="My Favorite Devotionals"></a></li>
+          <li class="slide"><a href="/ICE/Halloween/"><img src="/images/Sites/Halloween.png" alt="Halloween"></a></li>
+          <li class="slide"><a href="/ICE/Flags/"><img src="/images/Sites/Flags.png" alt="Flags"></a></li>
+          <li class="slide"><a href="/ICE/Insta/"><img src="/images/Sites/Insta.png" alt="Instagram recreation site"></a></li>
+        </ul>
+      </div>
+      <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Choose slide"></div>
+    </section>
+
+    <section class="gallery">
+      <h1>Parl.TV</h1>
+      <div class="gallery-grid">
+        <a href="https://parl.tv/"><img id="corner1" src="images/Sites/parltv.png" alt="Parl TV"></a>
+        <a href="https://dev.parl.tv"><img id="corner2" src="images/Sites/ParlDev.png" alt="ParlDev"></a>
+        <a href="https://dev.parl.tv/letter-relay"><img id="corner3" src="/images/Sites/ParlDev_Letter_Relay.png" alt="ParlDev Letter Relay"></a>
+        <a href="https://dev.parl.tv/maze-escape"><img id="corner4" src="images/Sites/ParlDev_Maze_Escape.png" alt="ParlDev Maze Escape"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="/">Parl</a>
+    <a href="About_Me/">About me</a>
+    <a href="Licences/">Licences</a>
+    <a href="https://parl.tv">My Website</a>
+    <a href="Privacy_Policy/">Privacy Policy</a>
+  </footer>
+</body>
+</html>

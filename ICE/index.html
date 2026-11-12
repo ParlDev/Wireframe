@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ICE.css">
+    <script src="/js/theme.js" defer></script>
+    <script src="/js/seasonal-logo.js" defer></script>
+    <script>
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="/">
+            <img class="brand-logo" src="/images/Logo/logo.png" alt="Parley Murdock logo">
+            <span class="brand-name">Parl</span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+            <a href="/">Home</a>
+            <a href="/WWR/">WWR</a>
+            <a href="/ICE/" aria-current="page">ICE</a>
+            <a href="/About_Me/">About Me</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                <path d="M12 2a10 10 0 0 0 0 20z" fill="var(--bg)"></path>
+            </svg>
+        </button>
+    </header>
+
+    <h1>Ice Challenges</h1>
+    <br>
+    <div class="grid">
+        <a class="card" href="/ICE/Prophet_Card/">
+            <img src="/images/Sites/Dallin_H_Oaks.png" alt="">
+            <div class="text">
+                <h3>Prophet Card</h3>
+                <p>This is a challenge to make a card all about the prophet. It was the first ICE challenge we did.</p>
+            </div>
+        </a>
+        <a class="card" href="/ICE/Apostle_Spotlight/">
+            <img src="/images/Sites/Apostles.png" alt="">
+            <div class="text">
+                <h3>Apostle Spotlight</h3>
+                <p>This is a challenge to make a whole card for all 15 of the apostles. 
+                    This is the first one where we were only given the image.</p>
+            </div>
+        </a>
+        <a class="card" href="/ICE/My_Fav_Devos/">
+            <img src="/images/Sites/My_Fav_Devos.png" alt="">
+            <div class="text">
+                <h3>My Favorite Devotionals</h3>
+                <p></p>
+            </div>
+        </a>
+        <a class="card" href="/ICE/Halloween/">
+            <img src="/images/Sites/Halloween.png" alt="">
+            <div class="text">
+                <h3>Halloween</h3>
+                <p></p>
+            </div>
+        </a>
+        <a class="card" href="/ICE/Flags/">
+            <img src="/images/Sites/Flags.png" alt="">
+            <div class="text">
+                <h3>Flags</h3>
+                <p></p>
+            </div>
+        </a>
+        <a class="card" href="/ICE/Insta/">
+            <img src="/images/Sites/Insta.png" alt="">
+            <div class="text">
+                <h3>Instagram</h3>
+                <p></p>
+            </div>
+        </a>
+    </div>
+  <footer class="site-footer">
+    <a class="footer-brand" href="/">Parl/a>
+    <a href="/About_Me/">About me</a>
+    <a href="/Licences/">Licences</a>
+    <a href="https://parl.tv">My Website</a>
+    <a href="/Privacy_Policy/">Privacy Policy</a>
+  </footer>
+</body>
+</html>

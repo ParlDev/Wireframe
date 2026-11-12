@@ -1,0 +1,36 @@
+.policy {
+  width: min(92%, 50rem);
+  margin: 3rem auto 5rem;
+}
+
+.policy h1 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.policy .effective {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.policy h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.5rem;
+  color: var(--accent);
+}
+
+.policy p {
+  margin: 0 0 1rem;
+}
+
+.policy a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.policy .signoff {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+}

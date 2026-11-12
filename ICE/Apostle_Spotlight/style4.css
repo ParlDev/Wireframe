@@ -1,0 +1,58 @@
+body{
+    background-color: #e8eced;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+    text-align: center;
+    border: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: black;
+    margin: 0 100px;
+    background-image: url(images/christus.webp);
+    background-size:cover;
+}
+.fp{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    img{
+    vertical-align: bottom;
+        border: 10px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+    img:hover{
+        border-color: black;
+    }
+    .pres{
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+    }
+}
+.ap{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    img{
+        border-style: solid;
+        border-width: 10px;
+        border-color: white;
+        border-radius: 50%;
+        object-fit: cover;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    img:hover{
+    border-color: black;
+    }
+}

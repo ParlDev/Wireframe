@@ -1,0 +1,17 @@
+h1, h3{
+    text-align: center;
+}
+hr {
+  width: 100%;
+}
+p{
+    width: min(92%, 50rem);
+    margin: 3rem auto 5rem;
+}
+.small{
+    margin:auto;
+    text-align: center;
+    width: min(92%, 50rem);
+    font-size: 75%;
+    color: grey;
+}

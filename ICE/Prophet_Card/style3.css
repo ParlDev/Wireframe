@@ -1,0 +1,58 @@
+body{
+    background-color: #ffecd7;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+.card{
+    background-color: #008DB1;
+    border-radius: 30px;
+    border-color: #004E63;
+    color: #FFFFFE;
+    max-width: 390px;
+    min-width: 280px;
+    border: 4px solid #004E63;
+    padding: 28px 24px;
+    margin: 24px auto;
+}.title{
+        font-family: helvetica;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+    }
+    section{
+        text-align: center;
+    }
+    .subtitle{
+        font-family: helvetica;
+        color: #91E4FB;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .tacos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border: solid white 3px;
+  box-sizing: border-box;
+}
+
+    .list{
+        font-size: 20px;
+        font-family: helvetica;
+        color:#FFFFFF;
+        width: 65%;
+        margin: auto;
+    }
+    @font-face {
+        font-size: 20px;
+        color: #FFD783;
+        font-family: "brush-script-mt-regular";
+        src:"fonts/brush-script-mt-regular.ttf";
+    }
+
