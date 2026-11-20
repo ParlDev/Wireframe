@@ -17,6 +17,7 @@ const WWR_NAMES = [
   "Wumpus Wrangling Revisited",
 
   // Silly
+  "Well Well, Rock",
   "Wombats Wearing Raincoats",
   "Wobbly Waffle Robot",
   "Wizards Who Rollerblade",
